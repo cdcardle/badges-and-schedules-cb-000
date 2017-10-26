@@ -2,12 +2,12 @@ def badge_maker(name)
   return "Hello, my name is #{name}."
 end
 
-def batch_badge_creator(array)
-  array2 = []
-  array.each do |name|
-    array2.push(badge_maker(name))
+def batch_badge_creator(names)
+  attendees = []
+  names.each do |name|
+    attendees.push(badge_maker(name))
   end
-  return array2
+  return attendees
 end
 
 def assign_rooms(attendees)
