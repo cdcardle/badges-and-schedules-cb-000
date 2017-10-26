@@ -9,3 +9,9 @@ def batch_badge_creator(array)
   end
   return array2
 end
+
+def assign_rooms(array)
+  array.each do |name|
+    puts "Hello, #{name}! You'll be assigned to room #{array.index(name)}"
+  end
+end
